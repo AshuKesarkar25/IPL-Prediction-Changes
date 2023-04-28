@@ -51,13 +51,16 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 col1, col2 = st.columns(2)
 
 with col1:
-    batting_team = st.selectbox('Select the batting team',sorted(teams),style='font-size: 20px;')
+    batting_team = st.selectbox('Select the batting team', 
+                            sorted(teams), 
+                            format_func=lambda x: f'<span style="font-size: 20px">{x}</span>', 
+                            unsafe_allow_html=True)
 with col2:
-    bowling_team = st.selectbox('Select the bowling team',sorted(teams),style='font-size: 20px;')
+    bowling_team = st.selectbox('Select the bowling team',sorted(teams))
 
-selected_city = st.selectbox('Select host city',sorted(cities),style='font-size: 20px;')
+selected_city = st.selectbox('Select host city',sorted(cities))
 
-target = st.number_input('Target',style='font-size: 20px;')
+target = st.number_input('Target')
 
 col3,col4,col5 = st.columns(3)
 
