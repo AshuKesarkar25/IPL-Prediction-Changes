@@ -21,7 +21,7 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
        'Sharjah', 'Mohali', 'Bengaluru']
 
 pipe = pickle.load(open('pipetest.pkl','rb'))
-st.title('IPL Win Predictor')
+st.markdown("<h1 style='text-align: center; color: blue; font-size: 60px;'>Dream 11 Data Genius</h1>", unsafe_allow_html=True)
 
 #Background Image
 page_bg_img = '''
