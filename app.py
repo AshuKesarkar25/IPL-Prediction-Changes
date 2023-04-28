@@ -27,7 +27,7 @@ pipe = pickle.load(open('pipetest.pkl','rb'))
 page_bg_img = '''
 <style>
 [data-testid="stAppViewContainer"] {
-background-image: url("https://th-i.thgim.com/public/incoming/w7176/article66649469.ece/alternates/LANDSCAPE_1200/PTI03_26_2022_000146A.jpg");
+background-image: url("https://feeds.abplive.com/onecms/images/uploaded-images/2023/03/30/51b8290feee8be01e2767a5678e8581b1680183626765567_original.jpg?impolicy=abp_cdn&imwidth=720");
 background-size: cover;}
 
 select {
