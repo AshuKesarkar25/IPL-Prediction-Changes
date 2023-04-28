@@ -27,7 +27,7 @@ pipe = pickle.load(open('pipetest.pkl','rb'))
 page_bg_img = '''
 <style>
 [data-testid="stAppViewContainer"] {
-background-image: url("https://www.91-cdn.com/hub/wp-content/uploads/2023/03/How-to-watch-TATA-IPL-2023-live-streaming-online-free-on-phone-and-laptop.png");
+background-image: url("https://e1.pxfuel.com/desktop-wallpaper/833/8/desktop-wallpaper-ipl-team-logo-ipl.jpg");
 background-size: cover;}
 
 select {
