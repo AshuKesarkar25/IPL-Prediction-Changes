@@ -29,6 +29,10 @@ page_bg_img = '''
 [data-testid="stAppViewContainer"] {
 background-image: url("https://www.91-cdn.com/hub/wp-content/uploads/2023/03/How-to-watch-TATA-IPL-2023-live-streaming-online-free-on-phone-and-laptop.png");
 background-size: cover;}
+
+select {
+  font-size: 20px;
+}
 </style>
 '''
 
