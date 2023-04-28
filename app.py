@@ -21,7 +21,7 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
        'Sharjah', 'Mohali', 'Bengaluru']
 
 pipe = pickle.load(open('pipetest.pkl','rb'))
-st.markdown("<h1 style='text-align: center; color: white; font-size: 60px;'>Dream 11 Data Genius</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: bottom; color: white; font-size: 40px;'>Dream 11 Data Genius</h1>", unsafe_allow_html=True)
 
 #Background Image
 page_bg_img = '''
@@ -51,13 +51,13 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 col1, col2 = st.columns(2)
 
 with col1:
-    batting_team = st.selectbox('Select the batting team',sorted(teams))
+    batting_team = st.selectbox('Select the batting team',sorted(teams),style='font-size: 20px;')
 with col2:
-    bowling_team = st.selectbox('Select the bowling team',sorted(teams))
+    bowling_team = st.selectbox('Select the bowling team',sorted(teams),style='font-size: 20px;')
 
-selected_city = st.selectbox('Select host city',sorted(cities))
+selected_city = st.selectbox('Select host city',sorted(cities),style='font-size: 20px;')
 
-target = st.number_input('Target')
+target = st.number_input('Target',style='font-size: 20px;')
 
 col3,col4,col5 = st.columns(3)
 
