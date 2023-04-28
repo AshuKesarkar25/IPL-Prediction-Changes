@@ -21,7 +21,7 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
        'Sharjah', 'Mohali', 'Bengaluru']
 
 pipe = pickle.load(open('pipetest.pkl','rb'))
-st.markdown("<h1 style='text-align: center; color: white; font-size: 40px;'>Dream 11 Data Genius</h1>", unsafe_allow_html=True)
+
 
 #Background Image
 page_bg_img = '''
@@ -29,20 +29,6 @@ page_bg_img = '''
 [data-testid="stAppViewContainer"] {
 background-image: url("https://www.91-cdn.com/hub/wp-content/uploads/2023/03/How-to-watch-TATA-IPL-2023-live-streaming-online-free-on-phone-and-laptop.png");
 background-size: cover;}
-
-[data-testid="stSidebar"] > div:first-child {{
-background-image: url("https://www.icccricketschedule.com/wp-content/uploads/2021/12/IPL-2022-Teams-1.jpg");
-background-position: center; 
-background-repeat: no-repeat;
-background-attachment: fixed;
-}}
-
-[data-testid="stHeader"] {{
-background: rgba(0,0,0,0);
-}}
-
-[data-testid="stToolbar"] {{
-right: 2rem;
 </style>
 '''
 
@@ -51,10 +37,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 col1, col2 = st.columns(2)
 
 with col1:
-    batting_team = st.selectbox('Select the batting team', 
-                            sorted(teams), 
-                            format_func=lambda x: f'<span style="font-size: 20px">{x}</span>', 
-                            unsafe_allow_html=True)
+    batting_team = st.selectbox('Select the batting team',sorted(teams))
 with col2:
     bowling_team = st.selectbox('Select the bowling team',sorted(teams))
 
